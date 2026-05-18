@@ -1,0 +1,30 @@
+# Node
+node_modules/
+.next/
+out/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env
+.env
+.env.local
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+venv/
+__pycache__/
+
+# Misc
+*.log
