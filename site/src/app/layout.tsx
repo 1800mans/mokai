@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   keywords: [
     "precision agriculture",
     "fertigation",
-    "cosed loop",
+    "closed loop",
     "data driven",
     "irrigation automation",
     "agricultural telemetry",
