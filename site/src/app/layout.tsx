@@ -10,10 +10,6 @@ export const metadata: Metadata = {
     icon: "/icon.png",
   },
 
-  openGraph: {
-    images: ["/og-image.jpg"],
-  },
-
   keywords: [
     "precision agriculture",
     "fertigation",
@@ -38,13 +34,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mokai.dev"),
 
   openGraph: {
-    title: "Mokai",
-    description:
-      "Operating System for Precision Agriculture",
-    url: "https://mokai.dev",
-    siteName: "Mokai",
-    locale: "en_US",
-    type: "website",
+  title: "Mokai",
+  description:
+    "Operating System for Precision Agriculture",
+  url: "https://mokai.dev",
+  siteName: "Mokai",
+  locale: "en_US",
+  type: "website",
+  images: ["/og-image.jpg"],
   },
 
   twitter: {
