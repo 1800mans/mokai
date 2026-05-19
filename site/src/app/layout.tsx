@@ -6,6 +6,13 @@ export const metadata: Metadata = {
 
   description:
     "Closed-loop, data-driven infrastructure for irrigation, fertigation and agricultural telemetry. Enterprise Distributed Node Architecture for precision agriculture.",
+  icons: {
+    icon: "/icon.png",
+  },
+
+  openGraph: {
+    images: ["/og-image.jpg"],
+  },
 
   keywords: [
     "precision agriculture",

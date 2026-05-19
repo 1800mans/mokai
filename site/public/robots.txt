@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mokai.dev/sitemap.xml
