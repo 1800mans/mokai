@@ -9,7 +9,7 @@ import {
 export default function FeatureStrip() {
   return (
     <section className="border-y border-white/5 bg-[#1b2026]/70 backdrop-blur-sm">
-      <div className="mx-auto grid max-w-[1600px] grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      <div className="mx-auto grid max-w-[1600px] grid-cols-2 lg:grid-cols-5 lg:grid-cols-5">
 
         <Feature
           icon={<Droplets size={28} strokeWidth={1.5} />}
@@ -58,7 +58,7 @@ function Feature({
     <div
       className="
       group
-      flex min-h-[150px] md:h-[130px] flex-col items-center justify-center
+      flex min-h-[120px] md:h-[130px] flex-col items-center justify-center
       border-r border-b md:border-b-0 border-white/5
       px-4 md:px-6
       text-center
@@ -88,7 +88,7 @@ function Feature({
       </div>
 
       {/* DESCRIPTION */}
-      <p className="mt-3 max-w-[180px] text-[12px] md:text-[13px] leading-5 text-slate-500">
+      <p className="hidden md:block mt-3 max-w-[180px] text-[13px] leading-5 text-slate-500">
         {description}
       </p>
     </div>
