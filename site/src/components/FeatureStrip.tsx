@@ -9,34 +9,46 @@ import {
 export default function FeatureStrip() {
   return (
     <section className="border-y border-white/5 bg-[#1b2026]/70 backdrop-blur-sm">
-      <div className="mx-auto grid max-w-[1600px] grid-cols-2 lg:grid-cols-5 lg:grid-cols-5">
-
+      <div
+        className="
+          mx-auto
+          flex
+          max-w-[1600px]
+          snap-x
+          snap-mandatory
+          overflow-x-auto
+          scrollbar-hide
+          lg:grid
+          lg:grid-cols-5
+          lg:overflow-visible
+        "
+      >
         <Feature
-          icon={<Droplets size={28} strokeWidth={1.5} />}
+          icon={<Droplets size={30} strokeWidth={1.5} />}
           title="Water"
           description="Optimize every drop. Maximize efficiency."
         />
 
         <Feature
-          icon={<Leaf size={34} strokeWidth={1.5} />}
+          icon={<Leaf size={30} strokeWidth={1.5} />}
           title="Growth"
           description="Healthier crops. Higher yields."
         />
 
         <Feature
-          icon={<BrainCircuit size={34} strokeWidth={1.5} />}
+          icon={<BrainCircuit size={30} strokeWidth={1.5} />}
           title="Intelligence"
           description="Data to insight. Better decisions."
         />
 
         <Feature
-          icon={<Wifi size={34} strokeWidth={1.5} />}
+          icon={<Wifi size={30} strokeWidth={1.5} />}
           title="Connected"
           description="Integrated telemetry and seamless connectivity."
         />
 
         <Feature
-          icon={<ShieldCheck size={34} strokeWidth={1.5} />}
+          icon={<ShieldCheck size={30} strokeWidth={1.5} />}
           title="Reliable"
           description="Built for unstable environments."
         />
@@ -57,18 +69,26 @@ function Feature({
   return (
     <div
       className="
-      group
-      flex min-h-[120px] md:h-[130px] flex-col items-center justify-center
-      border-r border-b md:border-b-0 border-white/5
-      px-4 md:px-6
-      text-center
-      transition-colors
-      duration-300
-      last:border-r-0
+        group
+        flex
+        h-[128px]
+        min-w-[220px]
+        snap-center
+        flex-col
+        items-center
+        justify-center
+        border-r
+        border-white/5
+        px-5
+        text-center
+        transition-colors
+        duration-300
+        last:border-r-0
+        lg:min-w-0
+        lg:h-[130px]
+        lg:px-6
       "
     >
-
-      {/* ICON */}
       <div
         className="
           mb-4
@@ -82,13 +102,30 @@ function Feature({
         {icon}
       </div>
 
-      {/* TITLE */}
-      <div className="text-[11px] md:text-[13px] uppercase tracking-[0.18em] md:tracking-[0.24em] text-lime-400">
+      <div
+        className="
+          text-[11px]
+          uppercase
+          tracking-[0.2em]
+          text-lime-400
+          lg:text-[13px]
+          lg:tracking-[0.24em]
+        "
+      >
         {title}
       </div>
 
-      {/* DESCRIPTION */}
-      <p className="hidden md:block mt-3 max-w-[180px] text-[13px] leading-5 text-slate-500">
+      <p
+        className="
+          hidden
+          mt-3
+          max-w-[180px]
+          text-[13px]
+          leading-5
+          text-slate-500
+          lg:block
+        "
+      >
         {description}
       </p>
     </div>
