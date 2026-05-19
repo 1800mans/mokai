@@ -41,14 +41,15 @@ export const metadata: Metadata = {
   siteName: "Mokai",
   locale: "en_US",
   type: "website",
-  images: ["/og-image.jpg"],
+  images: ["/og-image.png"],
   },
 
   twitter: {
-    card: "summary_large_image",
-    title: "Mokai",
-    description:
-      "Closed-loop precision agriculture infrastructure",
+  card: "summary_large_image",
+  title: "Mokai",
+  description:
+    "Closed-loop precision agriculture infrastructure",
+  images: ["/og-image.png"],
   },
 }
 
